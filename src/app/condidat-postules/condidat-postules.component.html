@@ -1,0 +1,24 @@
+<p>condidat-postules works!</p>
+
+<!-- condidats postulées -->
+<div class="row">
+    <div *ngFor="let postuleInfos of postuleInfoss" class="col-md-6 col-xl-6">
+       <div class="card m-b-30">
+          <div class="card-body row">
+             <div class="col-6">
+             </div>
+             <div class="col-6 card-title align-self-center mb-0">
+                <h5>{{postuleInfos?.cv}}</h5>
+                <p class="m-0">{{postuleInfos?.email}}</p>
+                <p class="m-0">{{postuleInfos?.domaineDetude}}</p>
+                <p class="m-0">{{postuleInfos?.societe}}</p>
+             </div>
+          </div>
+          <ul class="list-group list-group-flush">
+             <li class="list-group-item"><i class="fa fa-envelope float-right"></i>{{postuleInfos?.linkdenUrl}}</li>
+             <li class="list-group-item"><i class="fa fa-phone float-right"></i>Phone : {{postuleInfos?.githubUrl}}</li>
+          </ul>
+          
+       </div>
+    </div>
+  </div> 
